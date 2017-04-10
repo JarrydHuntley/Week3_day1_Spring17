@@ -35,7 +35,7 @@ namespace Week3_day1_Spring17
 
         public string Make
         {
-            get { return this.make;}
+            get { return this.make; }
         }
 
         public string CarName
@@ -59,10 +59,25 @@ namespace Week3_day1_Spring17
         public void PrintCarInfo()
         {
             Console.WriteLine("This car is a " + CarName + " that is " + color);
-            Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats+ " seats");
+            Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats + " seats");
             Console.WriteLine("The VIN is " + VIN);
         }
 
+        public void TrashCompactor(int countDown)
+        {
+            for (int i = countDown; i >= 0; i--)
+            {
+                Console.WriteLine("Trash compactor starting in: " + i);
+            }
+            color = "crunched";
+            make = "smashed.. :(";
+            model = "cubed";
+            numOfDoors = -2;
+            numOfSeats = 0;
+            VIN = "Far too late to tell.";
+
+            Console.WriteLine("Thank you for recycling");
+        }
 
     }
 }
