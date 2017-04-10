@@ -16,6 +16,7 @@ namespace Week3_day1_Spring17
             //car1.Color = "Green";
 
             car1.PrintCarInfo();
+            car1.PrintCarInfo();
             car1.TrashCompactor(10);
             car1.PrintCarInfo();
         }

@@ -69,6 +69,7 @@ namespace Week3_day1_Spring17
             Console.WriteLine("This car is a " + CarName + " that is " + color);
             Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats + " seats");
             Console.WriteLine("The VIN is " + VIN +" and it has "+ GetMileage() + " miles");
+            Console.WriteLine();
         }
 
         public void TrashCompactor(int countDown)
