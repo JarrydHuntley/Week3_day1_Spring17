@@ -8,12 +8,18 @@ namespace Week3_day1_Spring17
 {
     class Car
     {
-        public string color;
-        public int numOfDoors;
-        public int numOfSeats;
-        public string make;
-        public string model;
-        public string VIN;
+        private string color;
+        private int numOfDoors;
+        private int numOfSeats;
+        private string make;
+        private string model;
+        private string VIN;
+
+        public string Color
+        {
+            get { return this.color; }
+            set { color = value; }
+        }
 
         public Car(string color, int numOfDoors, int numOfSeats, string make, string model, string VIN)
         {
