@@ -33,9 +33,13 @@ namespace Week3_day1_Spring17
 
         public string Make
         {
-            get { return this.make; }
+            get { return this.make;}
         }
 
+        public string CarName
+        {
+            get { return this.make + " " + this.model; }
+        }
 
         public Car(string color, int numOfDoors, int numOfSeats, string make, string model, string VIN)
         {
