@@ -18,8 +18,24 @@ namespace Week3_day1_Spring17
         public string Color
         {
             get { return this.color; }
-            set { color = value; }
+            set
+            {
+                if (value.ToLower() == "green")
+                {
+                    color = "Blue";
+                }
+                else
+                {
+                    color = value;
+                }
+            }
         }
+
+        public string Make
+        {
+            get { return this.make; }
+        }
+
 
         public Car(string color, int numOfDoors, int numOfSeats, string make, string model, string VIN)
         {
