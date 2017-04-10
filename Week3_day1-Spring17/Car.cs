@@ -13,6 +13,18 @@ namespace Week3_day1_Spring17
         private int numOfSeats;
         private string make;
         private string model;
+        private string VIN;
+
+        public Car(string color, int numOfDoors, int numOfSeats, string make, string model, string VIN)
+        {
+            this.color = color;
+            this.numOfDoors = numOfDoors;
+            this.numOfSeats = numOfSeats;
+            this.make = make;
+            this.model = model;
+            this.VIN = VIN;
+
+        }
 
     }
 }
