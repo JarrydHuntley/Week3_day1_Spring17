@@ -8,6 +8,7 @@ namespace Week3_day1_Spring17
 {
     class Car
     {
+        //fields
         private string color;
         private int numOfDoors;
         private int numOfSeats;
@@ -15,6 +16,7 @@ namespace Week3_day1_Spring17
         private string model;
         private string VIN;
 
+        //properties
         public string Color
         {
             get { return this.color; }
@@ -41,6 +43,7 @@ namespace Week3_day1_Spring17
             get { return this.make + " " + this.model; }
         }
 
+        //constructors
         public Car(string color, int numOfDoors, int numOfSeats, string make, string model, string VIN)
         {
             this.color = color;
@@ -50,6 +53,16 @@ namespace Week3_day1_Spring17
             this.model = model;
             this.VIN = VIN;
         }
+
+        //methods
+
+        public void PrintCarInfo()
+        {
+            Console.WriteLine("This car is a " + CarName + "that is " + color);
+            Console.WriteLine("It has " + numOfDoors + "and " + numOfSeats);
+            Console.WriteLine("The VIN is " + VIN);
+        }
+
 
     }
 }
