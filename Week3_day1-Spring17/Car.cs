@@ -58,8 +58,8 @@ namespace Week3_day1_Spring17
 
         public void PrintCarInfo()
         {
-            Console.WriteLine("This car is a " + CarName + "that is " + color);
-            Console.WriteLine("It has " + numOfDoors + "and " + numOfSeats);
+            Console.WriteLine("This car is a " + CarName + " that is " + color);
+            Console.WriteLine("It has " + numOfDoors + "doors and " + numOfSeats+ "seats");
             Console.WriteLine("The VIN is " + VIN);
         }
 

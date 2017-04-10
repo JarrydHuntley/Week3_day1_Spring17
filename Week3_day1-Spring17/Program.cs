@@ -15,7 +15,7 @@ namespace Week3_day1_Spring17
             // Console.WriteLine("My car is a " + car1.make + " " + car1.model+ ", and the VIN is " + car1.VIN);
             //car1.Color = "Green";
 
-            Console.WriteLine(car1.Color + " " + car1.CarName);
+            car1.PrintCarInfo();
 
         }
     }
