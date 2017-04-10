@@ -15,6 +15,7 @@ namespace Week3_day1_Spring17
         private string make;
         private string model;
         private string VIN;
+        private int odometer;
 
         //properties
         public string Color
@@ -52,15 +53,22 @@ namespace Week3_day1_Spring17
             this.make = make;
             this.model = model;
             this.VIN = VIN;
+            this.odometer = 0;
         }
 
         //methods
+
+        private int GetMileage()
+        {
+            odometer = odometer + 500;
+            return odometer;
+        }
 
         public void PrintCarInfo()
         {
             Console.WriteLine("This car is a " + CarName + " that is " + color);
             Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats + " seats");
-            Console.WriteLine("The VIN is " + VIN);
+            Console.WriteLine("The VIN is " + VIN +" and it has "+ GetMileage() + " miles");
         }
 
         public void TrashCompactor(int countDown)
